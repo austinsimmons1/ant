@@ -2410,6 +2410,7 @@ public class Project implements ResourceFactory {
     // Should move to a separate public class - and have API to add
     // listeners, etc.
     private static class AntRefTable extends Hashtable<String, Object> {
+        //FIXME: annotate field with @serial notation
         private static final long serialVersionUID = 1L;
 
         AntRefTable() {
