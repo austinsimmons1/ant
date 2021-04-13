@@ -675,6 +675,7 @@ public class Manifest {
          * @since Ant 1.5.2
          */
         @Override
+        //FIXME: object clone() does not call super.clone()
         public Object clone() {
             Section cloned = new Section();
             cloned.setName(name);
