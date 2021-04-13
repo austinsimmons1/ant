@@ -17,7 +17,7 @@
  */
 
 package org.apache.tools.ant;
-
+//FIXME: no need to impot a type that lives in the same package, delete this import
 import org.apache.tools.ant.Task;
 
 public class DummyTaskOk extends Task {
