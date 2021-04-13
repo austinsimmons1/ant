@@ -227,13 +227,13 @@ public class MailLogger extends DefaultLogger {
             this.from = from;
             return this;
         }
-        //FIXME: change field name so it is not same as method name
-        private String replytoList;
+
+        private String replyList;
         public String replytoList() {
-            return replytoList;
+            return replyList;
         }
         public Values replytoList(String replytoList) {
-            this.replytoList = replytoList;
+            this.replyList = replytoList;
             return this;
         }
         private String toList;
