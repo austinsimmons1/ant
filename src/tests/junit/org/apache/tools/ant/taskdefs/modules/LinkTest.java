@@ -551,8 +551,6 @@ public class LinkTest {
     public void testNestedOrderingListFile()
     throws IOException {
         buildRule.executeTarget("ordering-nested-file");
-        //FIXME: remove unused variable
-        ImageStructure image = verifyImageBuiltNormally();
         // TODO: Test resource order in created image (how?)
     }
 
