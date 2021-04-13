@@ -227,6 +227,7 @@ public class MailLogger extends DefaultLogger {
             this.from = from;
             return this;
         }
+        //FIXME: change field name so it is not same as method name
         private String replytoList;
         public String replytoList() {
             return replytoList;
