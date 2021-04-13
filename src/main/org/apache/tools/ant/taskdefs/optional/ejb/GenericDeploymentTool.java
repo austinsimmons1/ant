@@ -434,6 +434,7 @@ public class GenericDeploymentTool implements EJBDeploymentTool {
                 log("building "
                               + jarFile.getName()
                               + " with "
+                        //FIXME: remove string.valueof call
                               + String.valueOf(ejbFiles.size())
                               + " files",
                               Project.MSG_INFO);
