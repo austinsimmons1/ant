@@ -17,10 +17,7 @@
  */
 package org.apache.tools.ant;
 
-import java.io.EOFException;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -2409,7 +2406,7 @@ public class Project implements ResourceFactory {
     // Should move to a separate public class - and have API to add
     // listeners, etc.
     private static class AntRefTable extends Hashtable<String, Object> {
-        //FIXME: annotate field with @serial notation
+        @Serial
         private static final long serialVersionUID = 1L;
 
         AntRefTable() {
