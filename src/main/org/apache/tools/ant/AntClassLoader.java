@@ -150,6 +150,7 @@ public class AntClassLoader extends ClassLoader implements SubBuildListener, Clo
          *         enumeration; <code>false</code> otherwise.
          */
         public boolean hasMoreElements() {
+            //FIXME: remove useless parentheses
             return (this.nextResource != null);
         }
 
