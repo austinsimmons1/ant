@@ -20,6 +20,7 @@ package org.apache.tools.ant.util;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+//FIXME: no need to import a type that lives in the same package, delete this import
 import org.apache.tools.ant.util.FileUtils;
 
 /**
