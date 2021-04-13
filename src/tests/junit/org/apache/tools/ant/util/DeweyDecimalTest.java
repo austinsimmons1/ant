@@ -105,8 +105,7 @@ public class DeweyDecimalTest {
     }
 
     @Test
-    //FIXME: change name of method so that it is not confused with equals(Object) method
-    public void equals() {
+    public void equalsTest() {
          DeweyDecimal dd = new DeweyDecimal("1.2.3");
          assertFalse(dd.equals("other"));
          assertFalse(dd.equals(null));
