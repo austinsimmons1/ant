@@ -1831,8 +1831,7 @@ public class Project implements ResourceFactory {
             final String st = state.get(root);
             if (st == null) {
                 tsort(root, targetTable, state, visiting, ret);
-                //FIXME: compare string values using equals()
-            } else if (st == VISITING) {
+            } else if (st.equals(VISITING)) {
                 throw new BuildException("Unexpected node in visiting state: "
                         + root);
             }
