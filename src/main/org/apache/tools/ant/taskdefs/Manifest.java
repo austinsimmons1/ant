@@ -675,8 +675,8 @@ public class Manifest {
          * @since Ant 1.5.2
          */
         @Override
-        //FIXME: object clone() does not call super.clone()
-        public Object clone() {
+        public Object clone() throws CloneNotSupportedException {
+            Object clone = super.clone();
             Section cloned = new Section();
             cloned.setName(name);
             StreamUtils.enumerationAsStream(getAttributeKeys())
